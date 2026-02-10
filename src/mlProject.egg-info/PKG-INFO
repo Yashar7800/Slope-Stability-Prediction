@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: mlProject
+Version: 0.0.0
+Summary: A small python package for ml app
+Home-page: https://github.com/yashar7800/Slope-Stability-Prediction
+Author: yashar7800
+Author-email: yashar1378.ghaffari@gmail.com
+Project-URL: Bug Tracker, https://github.com/yashar7800/Slope-Stability-Prediction/issues
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# Slope-Stability-Prediction

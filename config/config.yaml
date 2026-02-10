@@ -1,0 +1,6 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_data: 'C:/Users/Yashar/Slope-Stability-Prediction/data/slope_stability_dataset.csv'
+  local_data_file: artifacts/data_ingestion/slop.csv

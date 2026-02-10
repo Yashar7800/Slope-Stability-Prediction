@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+joblib
+setuptools
+kagglehub
+box
+ensure
+mlProject
+python-box
+-e .

@@ -1,0 +1,413 @@
+[2026-02-10 18:50:52,105: INFO: main: welcome to the custom logging]
+[2026-02-10 18:50:52,105: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:50:52,108: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:50:52,108: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:50:52,109: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\utils\common.py", line 32, in read_yaml
+    return ConfigBox(content)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\box\box.py", line 295, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\config\configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\utils\common.py", line 34, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2026-02-10 18:51:26,850: INFO: main: welcome to the custom logging]
+[2026-02-10 18:51:26,850: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:51:26,851: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:51:26,861: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:51:26,862: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:51:26,863: INFO: common: created directory at: artifacts]
+[2026-02-10 18:51:26,863: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:51:26,863: INFO: data_ingestion: 
+The path pf the main source is: data/slop_stability_dataset.csv]
+[2026-02-10 18:51:26,864: ERROR: main: Error loading file: [Errno 2] No such file or directory: 'data/slop_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 21, in load_file
+    data = pd.read_csv(path, sep=',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'data/slop_stability_dataset.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.load_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 29, in load_file
+    raise FileExistsError(f"Error loading file: {e}")
+FileExistsError: Error loading file: [Errno 2] No such file or directory: 'data/slop_stability_dataset.csv'
+[2026-02-10 18:52:12,720: INFO: main: welcome to the custom logging]
+[2026-02-10 18:52:12,721: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:52:12,735: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:52:12,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:52:12,736: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:52:12,736: INFO: common: created directory at: artifacts]
+[2026-02-10 18:52:12,737: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:52:12,737: INFO: data_ingestion: 
+The path pf the main source is: C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv]
+[2026-02-10 18:52:12,738: ERROR: main: Error loading file: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Yashar\\\\Slope-Stability-Prediction\\\\data\\\\slop_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 21, in load_file
+    data = pd.read_csv(path, sep=',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Yashar\\\\Slope-Stability-Prediction\\\\data\\\\slop_stability_dataset.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.load_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 29, in load_file
+    raise FileExistsError(f"Error loading file: {e}")
+FileExistsError: Error loading file: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Yashar\\\\Slope-Stability-Prediction\\\\data\\\\slop_stability_dataset.csv'
+[2026-02-10 18:52:49,051: INFO: main: welcome to the custom logging]
+[2026-02-10 18:52:49,052: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:52:49,063: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:52:49,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:52:49,065: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:52:49,065: INFO: common: created directory at: artifacts]
+[2026-02-10 18:52:49,065: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:52:49,065: INFO: data_ingestion: 
+The path pf the main source is: C:/Users/Yashar/Slope-Stability-Prediction/data/slop_stability_dataset.csv]
+[2026-02-10 18:52:49,066: ERROR: main: Error loading file: [Errno 2] No such file or directory: 'C:/Users/Yashar/Slope-Stability-Prediction/data/slop_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 21, in load_file
+    data = pd.read_csv(path, sep=',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/Yashar/Slope-Stability-Prediction/data/slop_stability_dataset.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.load_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 29, in load_file
+    raise FileExistsError(f"Error loading file: {e}")
+FileExistsError: Error loading file: [Errno 2] No such file or directory: 'C:/Users/Yashar/Slope-Stability-Prediction/data/slop_stability_dataset.csv'
+[2026-02-10 18:53:51,328: INFO: main: welcome to the custom logging]
+[2026-02-10 18:53:51,329: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:53:51,338: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:53:51,339: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:53:51,339: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:53:51,340: INFO: common: created directory at: artifacts]
+[2026-02-10 18:53:51,340: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:53:51,340: INFO: data_ingestion: 
+The path pf the main source is: C:/Users/Yashar/Slope-Stability-Prediction/data/]
+[2026-02-10 18:53:51,341: ERROR: main: Error loading file: [Errno 2] No such file or directory: 'C:/Users/Yashar/Slope-Stability-Prediction/data//slop_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 21, in load_file
+    data = pd.read_csv(path + '/slop_stability_dataset.csv', sep=',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/Yashar/Slope-Stability-Prediction/data//slop_stability_dataset.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.load_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 29, in load_file
+    raise FileExistsError(f"Error loading file: {e}")
+FileExistsError: Error loading file: [Errno 2] No such file or directory: 'C:/Users/Yashar/Slope-Stability-Prediction/data//slop_stability_dataset.csv'
+[2026-02-10 18:55:05,692: INFO: main: welcome to the custom logging]
+[2026-02-10 18:55:05,693: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:55:05,702: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:55:05,702: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:55:05,703: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:55:05,704: INFO: common: created directory at: artifacts]
+[2026-02-10 18:55:05,704: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:55:05,704: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slop_stability_dataset.csv]
+[2026-02-10 18:55:05,705: ERROR: main: Error loading file: [Errno 2] No such file or directory: 'C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 21, in load_file
+    data = pd.read_csv(path, sep=',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.load_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 29, in load_file
+    raise FileExistsError(f"Error loading file: {e}")
+FileExistsError: Error loading file: [Errno 2] No such file or directory: 'C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv'
+[2026-02-10 18:57:54,735: INFO: main: welcome to the custom logging]
+[2026-02-10 18:57:54,735: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:57:54,736: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:57:54,737: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:57:54,737: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:57:54,738: INFO: common: created directory at: artifacts]
+[2026-02-10 18:57:54,738: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:57:54,738: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slop_stability_dataset.csv]
+[2026-02-10 18:57:54,739: ERROR: main: Error loading file: [Errno 2] No such file or directory: 'C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 21, in load_file
+    data = pd.read_csv(path, sep=',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.load_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 29, in load_file
+    raise FileExistsError(f"Error loading file: {e}")
+FileExistsError: Error loading file: [Errno 2] No such file or directory: 'C:\\Users\\Yashar\\Slope-Stability-Prediction\\data\\slop_stability_dataset.csv'
+[2026-02-10 18:59:49,631: INFO: main: welcome to the custom logging]
+[2026-02-10 18:59:49,632: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 18:59:49,633: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 18:59:49,633: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 18:59:49,634: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 18:59:49,634: INFO: common: created directory at: artifacts]
+[2026-02-10 18:59:49,634: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 18:59:49,634: ERROR: main: cannot assign to field 'source_data']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion = DataIngestion(config=data_ingestion_config)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 14, in __init__
+    self.config.source_data = config.source_data
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 17, in __setattr__
+dataclasses.FrozenInstanceError: cannot assign to field 'source_data'
+[2026-02-10 19:00:10,735: INFO: main: welcome to the custom logging]
+[2026-02-10 19:00:10,735: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 19:00:10,736: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 19:00:10,737: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 19:00:10,737: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 19:00:10,738: INFO: common: created directory at: artifacts]
+[2026-02-10 19:00:10,738: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 19:00:10,738: ERROR: main: cannot assign to field 'source_data']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion = DataIngestion(config=data_ingestion_config)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 14, in __init__
+    self.config.source_data = config.source_data
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 17, in __setattr__
+dataclasses.FrozenInstanceError: cannot assign to field 'source_data'
+[2026-02-10 19:06:05,976: INFO: main: welcome to the custom logging]
+[2026-02-10 19:06:05,977: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 19:06:05,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 19:06:05,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 19:06:05,993: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 19:06:05,993: INFO: common: created directory at: artifacts]
+[2026-02-10 19:06:05,993: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 19:06:05,993: ERROR: main: cannot assign to field 'source_data']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion = DataIngestion(config=data_ingestion_config)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_ingestion.py", line 14, in __init__
+    self.config.source_data = config.source_data
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 17, in __setattr__
+dataclasses.FrozenInstanceError: cannot assign to field 'source_data'
+[2026-02-10 19:08:03,210: INFO: main: welcome to the custom logging]
+[2026-02-10 19:08:03,211: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-10 19:08:03,212: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-10 19:08:03,212: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-10 19:08:03,213: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-10 19:08:03,213: INFO: common: created directory at: artifacts]
+[2026-02-10 19:08:03,213: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-10 19:08:03,214: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-10 19:08:03,298: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slop.csv]
+[2026-02-10 19:08:03,299: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-10 19:08:03,308: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-10 19:08:03,308: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
