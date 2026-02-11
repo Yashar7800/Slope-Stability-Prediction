@@ -15,3 +15,13 @@ class DataValidationConfig:
     source_data: Path
     STATUS_FILE: str
     all_schema: dict
+
+@dataclass(frozen=True)
+class DataPreprocessingConfig:
+
+    root_dir: Path
+    source_data: Path
+    data_validation_status_file: Path
+    X: Path
+    y: Path
+    train_test_split: Path

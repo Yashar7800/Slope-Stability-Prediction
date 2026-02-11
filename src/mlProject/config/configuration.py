@@ -1,6 +1,7 @@
 from mlProject.constants import *
 from mlProject.utils.common import read_yaml, create_directories, save_json
-from mlProject.entity.config_entity import DataIngestionConfig, DataValidationConfig
+from mlProject.entity.config_entity import (DataIngestionConfig, DataValidationConfig,
+                                            DataPreprocessingConfig)
 from pathlib import Path
 
 class ConfigurationManager:
@@ -40,3 +41,19 @@ class ConfigurationManager:
     
         )
         return data_validation_config
+    
+    def get_data_preprocessing_config(self) -> DataPreprocessingConfig:
+        config = self.config.data_preprocessing
+
+        create_directories([config.root_dir])
+
+        data_preprocessing_config = DataPreprocessingConfig(
+            root_dir=config.root_dir,
+            source_data = Path(config.source_data),
+            data_validation_status_file= config.data_validation_status_file,
+            X = Path(config.X),
+            y = Path(config.y),
+            train_test_split = Path(config.train_test_split)
+        )
+
+        return data_preprocessing_config

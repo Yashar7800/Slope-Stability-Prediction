@@ -9,3 +9,12 @@ data_validation:
   root_dir: artifacts/data_validation
   source_data: 'artifacts//data_ingestion//slope.csv'
   STATUS_FILE: artifacts/data_validation/status.txt
+
+data_preprocessing:
+  root_dir: artifacts/data_preprocessing
+  source_data: 'artifacts//data_ingestion//slope.csv'
+  data_validation_status_file: artifacts/data_validation/status.txt
+  X: artifacts/data_preprocessing/X.csv
+  y: artifacts/data_preprocessing/y.csv
+  train_test_split: artifacts/data_preprocessing/
+ 
