@@ -8,4 +8,6 @@ box
 ensure
 mlProject
 python-box
+matplotlib
+seaborn
 -e .
