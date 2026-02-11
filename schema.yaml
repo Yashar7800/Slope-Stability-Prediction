@@ -1,1 +1,10 @@
-a: 1
+COLUMNS:
+  Unit Weight (kN/m³): float64
+  Cohesion (kPa): float64
+  Internal Friction Angle (°): float64
+  Slope Angle (°): float64
+  Slope Height (m): float64
+  Pore Water Pressure Ratio: float64
+  Reinforcement Type: str    
+  Reinforcement Numeric: int64  
+  Factor of Safety (FS): float64

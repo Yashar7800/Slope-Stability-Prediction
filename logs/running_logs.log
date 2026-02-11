@@ -411,3 +411,538 @@ The shape of the initial dataset is: (10000, 9)]
 [2026-02-10 19:08:03,308: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
 
 ]
+[2026-02-11 12:37:05,764: INFO: main: welcome to the custom logging]
+[2026-02-11 12:37:05,764: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 12:37:05,777: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 12:37:05,789: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 12:37:05,791: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 12:37:05,791: INFO: common: created directory at: artifacts]
+[2026-02-11 12:37:05,791: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 12:37:05,792: INFO: data_ingestion: file already exists of size: ~ 1333 KB]
+[2026-02-11 12:37:05,792: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 12:37:23,702: INFO: main: welcome to the custom logging]
+[2026-02-11 12:37:23,702: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 12:37:23,703: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 12:37:23,704: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 12:37:23,704: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 12:37:23,704: INFO: common: created directory at: artifacts]
+[2026-02-11 12:37:23,705: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 12:37:23,705: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-11 12:37:23,819: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slop.csv]
+[2026-02-11 12:37:23,820: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-11 12:37:23,833: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-11 12:37:23,833: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:00:03,793: INFO: main: welcome to the custom logging]
+[2026-02-11 13:00:03,793: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:00:03,802: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:00:03,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:00:03,813: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:00:03,814: INFO: common: created directory at: artifacts]
+[2026-02-11 13:00:03,814: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:00:03,814: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-11 13:00:03,889: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slop.csv]
+[2026-02-11 13:00:03,890: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-11 13:00:03,899: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-11 13:00:03,900: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:00:03,900: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:00:03,901: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:00:03,902: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:00:03,903: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:00:03,903: INFO: common: created directory at: artifacts]
+[2026-02-11 13:00:03,904: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:00:03,904: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope_stability_dataset.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope_stability_dataset.csv'
+[2026-02-11 13:00:28,482: INFO: main: welcome to the custom logging]
+[2026-02-11 13:00:28,482: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:00:28,493: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:00:28,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:00:28,495: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:00:28,496: INFO: common: created directory at: artifacts]
+[2026-02-11 13:00:28,496: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:00:28,497: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-11 13:00:28,573: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slop.csv]
+[2026-02-11 13:00:28,573: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-11 13:00:28,582: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-11 13:00:28,582: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:00:28,583: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:00:28,584: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:00:28,585: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:00:28,586: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:00:28,586: INFO: common: created directory at: artifacts]
+[2026-02-11 13:00:28,587: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:00:28,587: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv'
+[2026-02-11 13:01:33,470: INFO: main: welcome to the custom logging]
+[2026-02-11 13:01:33,470: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:01:33,480: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:01:33,480: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:01:33,481: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:01:33,482: INFO: common: created directory at: artifacts]
+[2026-02-11 13:01:33,483: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:01:33,483: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-11 13:01:33,558: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slop.csv]
+[2026-02-11 13:01:33,558: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-11 13:01:33,567: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-11 13:01:33,567: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:01:33,567: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:01:33,569: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:01:33,570: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:01:33,571: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:01:33,571: INFO: common: created directory at: artifacts]
+[2026-02-11 13:01:33,572: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:01:33,572: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv'
+[2026-02-11 13:05:31,157: INFO: main: welcome to the custom logging]
+[2026-02-11 13:05:31,157: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:05:31,159: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:05:31,159: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:05:31,160: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:05:31,161: INFO: common: created directory at: artifacts]
+[2026-02-11 13:05:31,162: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:05:31,162: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-11 13:05:31,248: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slop.csv]
+[2026-02-11 13:05:31,249: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-11 13:05:31,258: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-11 13:05:31,259: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:05:31,259: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:05:31,261: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:05:31,262: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:05:31,264: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:05:31,265: INFO: common: created directory at: artifacts]
+[2026-02-11 13:05:31,265: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:05:31,266: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data,sep= ',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv'
+[2026-02-11 13:06:00,022: INFO: main: welcome to the custom logging]
+[2026-02-11 13:06:00,022: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:06:00,036: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:06:00,037: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:06:00,038: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:06:00,038: INFO: common: created directory at: artifacts]
+[2026-02-11 13:06:00,039: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:06:00,039: INFO: data_ingestion: file already exists of size: ~ 1333 KB]
+[2026-02-11 13:06:00,039: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:06:00,039: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:06:00,040: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:06:00,040: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:06:00,041: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:06:00,042: INFO: common: created directory at: artifacts]
+[2026-02-11 13:06:00,042: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:06:00,043: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data,sep= ',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv'
+[2026-02-11 13:06:12,368: INFO: main: welcome to the custom logging]
+[2026-02-11 13:06:12,368: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:06:12,379: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:06:12,380: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:06:12,381: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:06:12,381: INFO: common: created directory at: artifacts]
+[2026-02-11 13:06:12,382: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:06:12,382: INFO: data_ingestion: file already exists of size: ~ 1333 KB]
+[2026-02-11 13:06:12,382: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:06:12,382: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:06:12,383: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:06:12,383: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:06:12,384: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:06:12,385: INFO: common: created directory at: artifacts]
+[2026-02-11 13:06:12,385: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:06:12,386: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data,sep= ',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv'
+[2026-02-11 13:06:25,418: INFO: main: welcome to the custom logging]
+[2026-02-11 13:06:25,418: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:06:25,429: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:06:25,429: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:06:25,431: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:06:25,431: INFO: common: created directory at: artifacts]
+[2026-02-11 13:06:25,432: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:06:25,432: INFO: data_ingestion: file already exists of size: ~ 1333 KB]
+[2026-02-11 13:06:25,432: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:06:25,432: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:06:25,433: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:06:25,433: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:06:25,434: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:06:25,435: INFO: common: created directory at: artifacts]
+[2026-02-11 13:06:25,435: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:06:25,436: ERROR: main: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_02_data_validation.py", line 15, in main
+    data_validation.validate_all_columns()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 31, in validate_all_columns
+    raise e
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\data_validation.py", line 14, in validate_all_columns
+    data = pd.read_csv(self.config.source_data,sep= ',')
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\data_ingestion\\slope.csv'
+[2026-02-11 13:09:22,792: INFO: main: welcome to the custom logging]
+[2026-02-11 13:09:22,793: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:09:22,807: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:09:22,807: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:09:22,808: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:09:22,809: INFO: common: created directory at: artifacts]
+[2026-02-11 13:09:22,809: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:09:22,810: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-11 13:09:22,893: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slope.csv]
+[2026-02-11 13:09:22,893: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-11 13:09:22,902: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-11 13:09:22,902: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:09:22,903: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:09:22,904: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:09:22,904: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:09:22,905: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:09:22,906: INFO: common: created directory at: artifacts]
+[2026-02-11 13:09:22,906: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:09:22,935: INFO: main: ----->stage Data Validation Stage completed <<<<<< 
+
+x============x]
+[2026-02-11 13:12:21,718: INFO: main: welcome to the custom logging]
+[2026-02-11 13:12:21,718: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-11 13:12:21,720: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:12:21,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:12:21,738: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:12:21,739: INFO: common: created directory at: artifacts]
+[2026-02-11 13:12:21,740: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-11 13:12:21,740: INFO: data_ingestion: file already exists of size: ~ 1333 KB]
+[2026-02-11 13:12:21,740: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-11 13:12:21,740: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-11 13:12:21,741: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-11 13:12:21,742: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-11 13:12:21,743: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-11 13:12:21,743: INFO: common: created directory at: artifacts]
+[2026-02-11 13:12:21,744: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-11 13:12:21,764: INFO: main: ----->stage Data Validation Stage completed <<<<<< 
+
+x============x]
