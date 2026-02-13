@@ -11,4 +11,7 @@ python-box
 matplotlib
 seaborn
 xgboost
+streamlit
+shap
+plotly
 -e .

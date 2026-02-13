@@ -9,7 +9,8 @@ src/mlProject/components/__init__.py
 src/mlProject/components/data_ingestion.py
 src/mlProject/components/data_preprocessing.py
 src/mlProject/components/data_validation.py
-src/mlProject/components/train_model.py
+src/mlProject/components/model_trainer.py
+src/mlProject/components/prediction.py
 src/mlProject/config/__init__.py
 src/mlProject/config/configuration.py
 src/mlProject/constants/__init__.py
@@ -19,5 +20,7 @@ src/mlProject/pipeline/__init__.py
 src/mlProject/pipeline/stage_01_data_ingestion.py
 src/mlProject/pipeline/stage_02_data_validation.py
 src/mlProject/pipeline/stage_03_data_preprocessing.py
+src/mlProject/pipeline/stage_04_model_trainer.py
+src/mlProject/pipeline/stage_05_prediction.py
 src/mlProject/utils/__init__.py
 src/mlProject/utils/common.py
