@@ -85,7 +85,7 @@ class DataPreprocessing:
         feature_names = encoder.get_feature_names_out(['Reinforcement Numeric']).tolist()
         encoded_df = pd.DataFrame(encoded, columns=feature_names, index=df.index)
         # Drop original column and concatenate
-        df = df.drop('Reinforcement Numeric', axis=1)
+        df = df.drop(['Reinforcement Type', 'Reinforcement Numeric'], axis=1)
         df = pd.concat([df, encoded_df], axis=1)
         logger.info(f"One‑hot encoding complete. Added columns: {feature_names}")
 

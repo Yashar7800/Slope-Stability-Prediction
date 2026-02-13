@@ -14,3 +14,52 @@ Dynamic: project-url
 Dynamic: summary
 
 # Slope-Stability-Prediction
+
+- Slope stability is the ability of an inclined soil or rock mass to resist failure by sliding or collapsing. It is quantified by the Factor of Safety (FS)
+ * FS > 1.0 → Stable (resisting forces > driving forces)
+ * FS = 1.0 → Limit equilibrium (failure is imminent)
+ * FS < 1.0 → Unstable (failure has occurred or will occur)
+
+## Geotechnical Meaning & Influence on FS
+
+1- **Unit Weight (kN/m³)**: The weight per unit volume of the soil/rock.
+
+ - *Typical range: 15 – 25 kN/m³ (soft clays: ~16, sands: ~18, rock: ~22–26).*
+
+ 2- **Cohesion (c) – kPa**: The shear strength component that is independent of normal stress. Represents cementation, clay bonding, or apparent cohesion.
+
+  - *Typical range: 0 – 100 kPa (soft clay: 5–20, stiff clay: 20–50, cemented: >50).*
+
+3- **Internal Friction Angle (°)**: A measure of the shear strength from inter-particle friction and interlocking.
+
+ - *Typical range: 20° – 45° (soft clay: 15–25°, sand: 30–40°, dense gravel: 40–45°).*
+
+4- **Slope Angle (°)**: The inclination of the slope from horizontal.
+
+ - *Typical range: 10° – 60° (shallow: <20°, steep: >45°).*
+
+5- **Slope Height (m)**: Vertical height of the slope.
+
+ - *Typical range: 5 – 50 m (small cuts: 5–10 m, large embankments: 20–50 m).*
+
+6- **Pore Water Pressure Ratio**: The ratio of pore water pressure to total overburden pressure at the slip surface.
+
+ - *Range: 0.0 – 1.0+ (0 = dry, 0.5 = water table at mid‑height, >1.0 implies artesian conditions).*
+
+7- **Reinforcement Type**: The type of ground improvement or structural support used to stabilise the slope.
+
+ - 0 – *Retaining Wall: A rigid structure (concrete, gravity, cantilever) that resists earth pressure.Very effective, especially for steep cuts.*
+
+ - 1 – *Soil Nailing: Installing steel bars (nails) into the slope to create a reinforced zone.Common for temporary cuts and stabilising existing slopes.*
+
+ - 2 – *Geosynthetics: Geogrids or geotextiles placed in layers to add tensile reinforcement.Used in embankments and steepened slopes.*
+
+ - 3 – *Drainage: Installing drains to lower pore water pressure (reduces rᵤ).Often combined with other measures.*
+
+8- **Factor of Safety (FS)**: The computed safety factor from a limit equilibrium analysis.
+
+ - *FS = 3.0 – likely the maximum value recorded (capped). These slopes are very stable.*
+
+ - *FS = 1.0 – 1.5 – marginally stable to acceptable for temporary works.*
+
+ - *FS < 1.0 – failure cases.*

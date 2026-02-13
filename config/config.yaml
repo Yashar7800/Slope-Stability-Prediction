@@ -17,4 +17,23 @@ data_preprocessing:
   X: artifacts/data_preprocessing/X.csv
   y: artifacts/data_preprocessing/y.csv
   train_test_split: artifacts/data_preprocessing/
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  train_data_path: artifacts/data_preprocessing/X_train.csv
+  test_data_path: artifacts/data_preprocessing/X_test.csv
+  train_target_path: artifacts/data_preprocessing/y_train.csv
+  test_target_path: artifacts/data_preprocessing/y_test.csv
+  model_path: artifacts/model_trainer/model.joblib          
+  rf_model_path: artifacts/model_trainer/rf_model.joblib    
+  xgb_model_path: artifacts/model_trainer/xgb_model.joblib  
+  metrics_path: artifacts/model_trainer/metrics.json
+
+prediction:
+  root_dir: artifacts/prediction
+  X_path: artifacts/data_preprocessing/X.csv
+  y_path: artifacts/data_preprocessing/y.csv          
+  scaler_path: artifacts/data_preprocessing/scaler.joblib
+  model_path: artifacts/model_trainer/model.joblib
+  output_path: artifacts/prediction/predictions.csv
  

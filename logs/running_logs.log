@@ -1703,3 +1703,745 @@ Saving preprocessor objects]
 [2026-02-11 17:19:44,231: INFO: main: ----->stage Data Preprocessing Stage completed <<<<<< 
 
 x============x]
+[2026-02-13 15:06:29,883: INFO: main: welcome to the custom logging]
+[2026-02-13 15:06:29,884: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-13 15:06:29,900: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:06:29,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:06:29,935: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:06:29,936: INFO: common: created directory at: artifacts]
+[2026-02-13 15:06:29,937: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-13 15:06:29,938: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-13 15:06:30,110: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slope.csv]
+[2026-02-13 15:06:30,110: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-13 15:06:30,128: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-13 15:06:30,130: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-13 15:06:30,130: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-13 15:06:30,134: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:06:30,137: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:06:30,139: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:06:30,140: INFO: common: created directory at: artifacts]
+[2026-02-13 15:06:30,140: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-13 15:06:30,187: INFO: main: ----->stage Data Validation Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:06:30,188: INFO: main: -----> stage Data Preprocessing Stage started <<<<<<]
+[2026-02-13 15:06:30,188: INFO: stage_03_data_preprocessing: --- Starting Stage 03: Data Preprocessing ---]
+[2026-02-13 15:06:30,191: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:06:30,193: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:06:30,195: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:06:30,196: INFO: common: created directory at: artifacts]
+[2026-02-13 15:06:30,197: INFO: common: created directory at: artifacts/data_preprocessing]
+[2026-02-13 15:06:30,197: INFO: stage_03_data_preprocessing: 
+Configuration Loaded Successfully]
+[2026-02-13 15:06:30,197: INFO: data_preprocessing: 
+========== STARTING DATA PREPROCESSING STAGE ==========]
+[2026-02-13 15:06:30,198: INFO: data_preprocessing: 
+Check the Status File!]
+[2026-02-13 15:06:30,232: INFO: data_preprocessing: 
+Data is Successfully loaded and the initial shape is (10000, 9)]
+[2026-02-13 15:06:30,276: INFO: data_preprocessing: 
+EDA:
+Unit Weight (kN/m³)            0
+Cohesion (kPa)                 0
+Internal Friction Angle (°)    0
+Slope Angle (°)                0
+Slope Height (m)               0
+Pore Water Pressure Ratio      0
+Reinforcement Type             0
+Reinforcement Numeric          0
+Factor of Safety (FS)          0
+dtype: int64
+None
+       Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio  Reinforcement Numeric  Factor of Safety (FS)
+count         10000.000000    10000.000000                 10000.000000     10000.000000      10000.000000               10000.000000           10000.000000           10000.000000
+mean             19.941596       27.703844                    32.501260        34.935669         27.358871                   0.503145               1.494300               2.545083
+std               2.876301       13.018255                     7.169344        14.449730         13.017788                   0.288341               1.120399               0.659996
+min              15.000116        5.007099                    20.001203        10.000277          5.000753                   0.000008               0.000000               0.500000
+25%              17.463289       16.427561                    26.343698        22.342862         15.992250                   0.256956               0.000000               2.125824
+50%              19.925286       27.765355                    32.551702        35.001512         27.217274                   0.506090               1.000000               3.000000
+75%              22.400063       39.041565                    38.616846        47.355813         38.771467                   0.753446               3.000000               3.000000
+max              24.997177       49.996617                    44.997524        59.989469         49.998747                   0.999940               3.000000               3.000000]
+[2026-02-13 15:06:30,277: INFO: data_preprocessing: 
+Adding New Features]
+[2026-02-13 15:06:30,280: INFO: data_preprocessing: 
+Adding beta_rad: 0       0.731419
+1       0.575341
+2       1.016217
+3       0.365628
+4       0.687534
+          ...   
+9995    0.832552
+9996    0.841709
+9997    0.409777
+9998    0.553548
+9999    0.599890
+Name: Slope Angle (°), Length: 10000, dtype: float64
+phi_rad: 0       0.667588
+1       0.429574
+2       0.500316
+3       0.638477
+4       0.559417
+          ...   
+9995    0.764574
+9996    0.675366
+9997    0.357555
+9998    0.524037
+9999    0.461377
+Name: Internal Friction Angle (°), Length: 10000, dtype: float64]
+[2026-02-13 15:06:30,285: INFO: data_preprocessing: New features added. Shape after feature engineering: (10000, 15)]
+[2026-02-13 15:06:30,285: INFO: data_preprocessing: 
+Creating binary target (Safety_Status)]
+[2026-02-13 15:06:30,286: INFO: data_preprocessing: Target distribution: Stable (1): 8841, Unstable (0): 1159]
+[2026-02-13 15:06:30,286: INFO: data_preprocessing: 
+Checking for missing values]
+[2026-02-13 15:06:30,288: INFO: data_preprocessing: No missing values found.]
+[2026-02-13 15:06:30,289: INFO: data_preprocessing: 
+Encoding categorical feature: Reinforcement Numeric]
+[2026-02-13 15:06:30,294: INFO: data_preprocessing: One‑hot encoding complete. Added columns: ['Reinforcement Numeric_1', 'Reinforcement Numeric_2', 'Reinforcement Numeric_3']]
+[2026-02-13 15:06:30,295: INFO: data_preprocessing: 
+Splitting data into train/test sets]
+[2026-02-13 15:06:30,533: INFO: data_preprocessing: 
+X data is completely saved at artifacts\data_preprocessing\X.csv]
+[2026-02-13 15:06:30,542: INFO: data_preprocessing: 
+y data is completely saved at artifacts\data_preprocessing\y.csv]
+[2026-02-13 15:06:30,544: INFO: data_preprocessing: 
+X shape is: (10000, 16)
+y shape is: (10000,)]
+[2026-02-13 15:06:30,560: INFO: data_preprocessing: Train size: 8000 rows, Test size: 2000 rows]
+[2026-02-13 15:06:30,562: INFO: data_preprocessing: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:06:30,564: INFO: data_preprocessing: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:06:30,584: INFO: data_preprocessing: Scaled 15 numerical features on train/test sets.]
+[2026-02-13 15:06:30,585: INFO: data_preprocessing: 
+Saving preprocessed datasets]
+[2026-02-13 15:06:30,854: INFO: data_preprocessing: Saved X_train to artifacts\data_preprocessing]
+[2026-02-13 15:06:30,854: INFO: data_preprocessing: Saved X_test to artifacts\data_preprocessing]
+[2026-02-13 15:06:30,854: INFO: data_preprocessing: Saved y_train to artifacts\data_preprocessing]
+[2026-02-13 15:06:30,855: INFO: data_preprocessing: Saved y_test to artifacts\data_preprocessing]
+[2026-02-13 15:06:30,855: INFO: data_preprocessing: 
+Saving preprocessor objects]
+[2026-02-13 15:06:30,858: INFO: data_preprocessing: Encoder saved to artifacts\data_preprocessing\encoder.joblib]
+[2026-02-13 15:06:30,859: INFO: data_preprocessing: Scaler saved to artifacts\data_preprocessing\scaler.joblib]
+[2026-02-13 15:06:30,859: INFO: data_preprocessing: 
+========== DATA PREPROCESSING STAGE COMPLETED ==========]
+[2026-02-13 15:06:30,860: INFO: main: ----->stage Data Preprocessing Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:06:30,861: INFO: main: -----> stage Model Trainer Stage started <<<<<<]
+[2026-02-13 15:06:30,861: ERROR: main: ModelTrainerPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 54, in <module>
+    obj.main()
+    ~~~~~~~~^^
+TypeError: ModelTrainerPipeline.main() takes 0 positional arguments but 1 was given
+[2026-02-13 15:10:39,446: INFO: main: welcome to the custom logging]
+[2026-02-13 15:10:39,446: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-13 15:10:39,450: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:10:39,452: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:10:39,453: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:10:39,454: INFO: common: created directory at: artifacts]
+[2026-02-13 15:10:39,454: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-13 15:10:39,455: INFO: data_ingestion: file already exists of size: ~ 1333 KB]
+[2026-02-13 15:10:39,455: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-13 15:10:39,455: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-13 15:10:39,458: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:10:39,459: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:10:39,461: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:10:39,462: INFO: common: created directory at: artifacts]
+[2026-02-13 15:10:39,462: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-13 15:10:39,496: INFO: main: ----->stage Data Validation Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:10:39,496: INFO: main: -----> stage Data Preprocessing Stage started <<<<<<]
+[2026-02-13 15:10:39,496: INFO: stage_03_data_preprocessing: --- Starting Stage 03: Data Preprocessing ---]
+[2026-02-13 15:10:39,499: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:10:39,501: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:10:39,502: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:10:39,503: INFO: common: created directory at: artifacts]
+[2026-02-13 15:10:39,503: INFO: common: created directory at: artifacts/data_preprocessing]
+[2026-02-13 15:10:39,504: INFO: stage_03_data_preprocessing: 
+Configuration Loaded Successfully]
+[2026-02-13 15:10:39,504: INFO: data_preprocessing: 
+========== STARTING DATA PREPROCESSING STAGE ==========]
+[2026-02-13 15:10:39,504: INFO: data_preprocessing: 
+Check the Status File!]
+[2026-02-13 15:10:39,527: INFO: data_preprocessing: 
+Data is Successfully loaded and the initial shape is (10000, 9)]
+[2026-02-13 15:10:39,567: INFO: data_preprocessing: 
+EDA:
+Unit Weight (kN/m³)            0
+Cohesion (kPa)                 0
+Internal Friction Angle (°)    0
+Slope Angle (°)                0
+Slope Height (m)               0
+Pore Water Pressure Ratio      0
+Reinforcement Type             0
+Reinforcement Numeric          0
+Factor of Safety (FS)          0
+dtype: int64
+None
+       Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio  Reinforcement Numeric  Factor of Safety (FS)
+count         10000.000000    10000.000000                 10000.000000     10000.000000      10000.000000               10000.000000           10000.000000           10000.000000
+mean             19.941596       27.703844                    32.501260        34.935669         27.358871                   0.503145               1.494300               2.545083
+std               2.876301       13.018255                     7.169344        14.449730         13.017788                   0.288341               1.120399               0.659996
+min              15.000116        5.007099                    20.001203        10.000277          5.000753                   0.000008               0.000000               0.500000
+25%              17.463289       16.427561                    26.343698        22.342862         15.992250                   0.256956               0.000000               2.125824
+50%              19.925286       27.765355                    32.551702        35.001512         27.217274                   0.506090               1.000000               3.000000
+75%              22.400063       39.041565                    38.616846        47.355813         38.771467                   0.753446               3.000000               3.000000
+max              24.997177       49.996617                    44.997524        59.989469         49.998747                   0.999940               3.000000               3.000000]
+[2026-02-13 15:10:39,568: INFO: data_preprocessing: 
+Adding New Features]
+[2026-02-13 15:10:39,571: INFO: data_preprocessing: 
+Adding beta_rad: 0       0.731419
+1       0.575341
+2       1.016217
+3       0.365628
+4       0.687534
+          ...   
+9995    0.832552
+9996    0.841709
+9997    0.409777
+9998    0.553548
+9999    0.599890
+Name: Slope Angle (°), Length: 10000, dtype: float64
+phi_rad: 0       0.667588
+1       0.429574
+2       0.500316
+3       0.638477
+4       0.559417
+          ...   
+9995    0.764574
+9996    0.675366
+9997    0.357555
+9998    0.524037
+9999    0.461377
+Name: Internal Friction Angle (°), Length: 10000, dtype: float64]
+[2026-02-13 15:10:39,575: INFO: data_preprocessing: New features added. Shape after feature engineering: (10000, 15)]
+[2026-02-13 15:10:39,576: INFO: data_preprocessing: 
+Creating binary target (Safety_Status)]
+[2026-02-13 15:10:39,577: INFO: data_preprocessing: Target distribution: Stable (1): 8841, Unstable (0): 1159]
+[2026-02-13 15:10:39,577: INFO: data_preprocessing: 
+Checking for missing values]
+[2026-02-13 15:10:39,579: INFO: data_preprocessing: No missing values found.]
+[2026-02-13 15:10:39,579: INFO: data_preprocessing: 
+Encoding categorical feature: Reinforcement Numeric]
+[2026-02-13 15:10:39,584: INFO: data_preprocessing: One‑hot encoding complete. Added columns: ['Reinforcement Numeric_1', 'Reinforcement Numeric_2', 'Reinforcement Numeric_3']]
+[2026-02-13 15:10:39,585: INFO: data_preprocessing: 
+Splitting data into train/test sets]
+[2026-02-13 15:10:39,807: INFO: data_preprocessing: 
+X data is completely saved at artifacts\data_preprocessing\X.csv]
+[2026-02-13 15:10:39,812: INFO: data_preprocessing: 
+y data is completely saved at artifacts\data_preprocessing\y.csv]
+[2026-02-13 15:10:39,812: INFO: data_preprocessing: 
+X shape is: (10000, 16)
+y shape is: (10000,)]
+[2026-02-13 15:10:39,821: INFO: data_preprocessing: Train size: 8000 rows, Test size: 2000 rows]
+[2026-02-13 15:10:39,823: INFO: data_preprocessing: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:10:39,824: INFO: data_preprocessing: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:10:39,840: INFO: data_preprocessing: Scaled 15 numerical features on train/test sets.]
+[2026-02-13 15:10:39,840: INFO: data_preprocessing: 
+Saving preprocessed datasets]
+[2026-02-13 15:10:40,092: INFO: data_preprocessing: Saved X_train to artifacts\data_preprocessing]
+[2026-02-13 15:10:40,092: INFO: data_preprocessing: Saved X_test to artifacts\data_preprocessing]
+[2026-02-13 15:10:40,093: INFO: data_preprocessing: Saved y_train to artifacts\data_preprocessing]
+[2026-02-13 15:10:40,093: INFO: data_preprocessing: Saved y_test to artifacts\data_preprocessing]
+[2026-02-13 15:10:40,093: INFO: data_preprocessing: 
+Saving preprocessor objects]
+[2026-02-13 15:10:40,096: INFO: data_preprocessing: Encoder saved to artifacts\data_preprocessing\encoder.joblib]
+[2026-02-13 15:10:40,096: INFO: data_preprocessing: Scaler saved to artifacts\data_preprocessing\scaler.joblib]
+[2026-02-13 15:10:40,096: INFO: data_preprocessing: 
+========== DATA PREPROCESSING STAGE COMPLETED ==========]
+[2026-02-13 15:10:40,098: INFO: main: ----->stage Data Preprocessing Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:10:40,099: INFO: main: -----> stage Model Trainer Stage started <<<<<<]
+[2026-02-13 15:10:40,103: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:10:40,105: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:10:40,107: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:10:40,108: INFO: common: created directory at: artifacts]
+[2026-02-13 15:10:40,109: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-13 15:10:40,109: INFO: model_trainer: 
+========== STARTING MODEL TRAINER STAGE ==========]
+[2026-02-13 15:10:40,109: INFO: model_trainer: Loading preprocessed data for training]
+[2026-02-13 15:10:40,220: INFO: model_trainer: X_train shape: (8000, 16), X_test shape: (2000, 16)]
+[2026-02-13 15:10:40,222: INFO: model_trainer: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:10:40,223: INFO: model_trainer: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:10:40,223: INFO: model_trainer: Training Random Forest...]
+[2026-02-13 15:10:40,229: ERROR: main: could not convert string to float: 'Retaining Wall']
+Traceback (most recent call last):
+  File "C:\Users\Yashar\Slope-Stability-Prediction\main.py", line 54, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\pipeline\stage_04_model_trainer.py", line 16, in main
+    metrics, best_model = model_trainer.initiate_model_trainer()
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\model_trainer.py", line 104, in initiate_model_trainer
+    rf_model = self._train_random_forest(X_train, y_train)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\src\mlProject\components\model_trainer.py", line 40, in _train_random_forest
+    rf.fit(X_train, y_train)
+    ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\sklearn\base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\sklearn\ensemble\_forest.py", line 359, in fit
+    X, y = validate_data(
+           ~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<5 lines>...
+        ensure_all_finite=False,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\sklearn\utils\validation.py", line 2919, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\sklearn\utils\validation.py", line 1314, in check_X_y
+    X = check_array(
+        X,
+    ...<12 lines>...
+        input_name="X",
+    )
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\sklearn\utils\validation.py", line 1022, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\sklearn\utils\_array_api.py", line 878, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+  File "C:\Users\Yashar\Slope-Stability-Prediction\project-env\Lib\site-packages\pandas\core\generic.py", line 2039, in __array__
+    arr = np.asarray(values, dtype=dtype)
+ValueError: could not convert string to float: 'Retaining Wall'
+[2026-02-13 15:15:23,540: INFO: main: welcome to the custom logging]
+[2026-02-13 15:15:23,541: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-13 15:15:23,545: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:15:23,547: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:15:23,549: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:15:23,550: INFO: common: created directory at: artifacts]
+[2026-02-13 15:15:23,550: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-13 15:15:23,551: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-13 15:15:23,681: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slope.csv]
+[2026-02-13 15:15:23,682: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-13 15:15:23,699: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-13 15:15:23,730: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-13 15:15:23,730: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-13 15:15:23,733: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:15:23,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:15:23,737: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:15:23,739: INFO: common: created directory at: artifacts]
+[2026-02-13 15:15:23,740: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-13 15:15:23,791: INFO: main: ----->stage Data Validation Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:15:23,792: INFO: main: -----> stage Data Preprocessing Stage started <<<<<<]
+[2026-02-13 15:15:23,792: INFO: stage_03_data_preprocessing: --- Starting Stage 03: Data Preprocessing ---]
+[2026-02-13 15:15:23,797: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:15:23,799: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:15:23,801: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:15:23,802: INFO: common: created directory at: artifacts]
+[2026-02-13 15:15:23,804: INFO: common: created directory at: artifacts/data_preprocessing]
+[2026-02-13 15:15:23,804: INFO: stage_03_data_preprocessing: 
+Configuration Loaded Successfully]
+[2026-02-13 15:15:23,805: INFO: data_preprocessing: 
+========== STARTING DATA PREPROCESSING STAGE ==========]
+[2026-02-13 15:15:23,805: INFO: data_preprocessing: 
+Check the Status File!]
+[2026-02-13 15:15:23,833: INFO: data_preprocessing: 
+Data is Successfully loaded and the initial shape is (10000, 9)]
+[2026-02-13 15:15:23,873: INFO: data_preprocessing: 
+EDA:
+Unit Weight (kN/m³)            0
+Cohesion (kPa)                 0
+Internal Friction Angle (°)    0
+Slope Angle (°)                0
+Slope Height (m)               0
+Pore Water Pressure Ratio      0
+Reinforcement Type             0
+Reinforcement Numeric          0
+Factor of Safety (FS)          0
+dtype: int64
+None
+       Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio  Reinforcement Numeric  Factor of Safety (FS)
+count         10000.000000    10000.000000                 10000.000000     10000.000000      10000.000000               10000.000000           10000.000000           10000.000000
+mean             19.941596       27.703844                    32.501260        34.935669         27.358871                   0.503145               1.494300               2.545083
+std               2.876301       13.018255                     7.169344        14.449730         13.017788                   0.288341               1.120399               0.659996
+min              15.000116        5.007099                    20.001203        10.000277          5.000753                   0.000008               0.000000               0.500000
+25%              17.463289       16.427561                    26.343698        22.342862         15.992250                   0.256956               0.000000               2.125824
+50%              19.925286       27.765355                    32.551702        35.001512         27.217274                   0.506090               1.000000               3.000000
+75%              22.400063       39.041565                    38.616846        47.355813         38.771467                   0.753446               3.000000               3.000000
+max              24.997177       49.996617                    44.997524        59.989469         49.998747                   0.999940               3.000000               3.000000]
+[2026-02-13 15:15:23,874: INFO: data_preprocessing: 
+Adding New Features]
+[2026-02-13 15:15:23,876: INFO: data_preprocessing: 
+Adding beta_rad: 0       0.731419
+1       0.575341
+2       1.016217
+3       0.365628
+4       0.687534
+          ...   
+9995    0.832552
+9996    0.841709
+9997    0.409777
+9998    0.553548
+9999    0.599890
+Name: Slope Angle (°), Length: 10000, dtype: float64
+phi_rad: 0       0.667588
+1       0.429574
+2       0.500316
+3       0.638477
+4       0.559417
+          ...   
+9995    0.764574
+9996    0.675366
+9997    0.357555
+9998    0.524037
+9999    0.461377
+Name: Internal Friction Angle (°), Length: 10000, dtype: float64]
+[2026-02-13 15:15:23,881: INFO: data_preprocessing: New features added. Shape after feature engineering: (10000, 15)]
+[2026-02-13 15:15:23,881: INFO: data_preprocessing: 
+Creating binary target (Safety_Status)]
+[2026-02-13 15:15:23,882: INFO: data_preprocessing: Target distribution: Stable (1): 8841, Unstable (0): 1159]
+[2026-02-13 15:15:23,883: INFO: data_preprocessing: 
+Checking for missing values]
+[2026-02-13 15:15:23,885: INFO: data_preprocessing: No missing values found.]
+[2026-02-13 15:15:23,885: INFO: data_preprocessing: 
+Encoding categorical feature: Reinforcement Numeric]
+[2026-02-13 15:15:23,890: INFO: data_preprocessing: One‑hot encoding complete. Added columns: ['Reinforcement Numeric_1', 'Reinforcement Numeric_2', 'Reinforcement Numeric_3']]
+[2026-02-13 15:15:23,890: INFO: data_preprocessing: 
+Splitting data into train/test sets]
+[2026-02-13 15:15:24,066: INFO: data_preprocessing: 
+X data is completely saved at artifacts\data_preprocessing\X.csv]
+[2026-02-13 15:15:24,071: INFO: data_preprocessing: 
+y data is completely saved at artifacts\data_preprocessing\y.csv]
+[2026-02-13 15:15:24,071: INFO: data_preprocessing: 
+X shape is: (10000, 15)
+y shape is: (10000,)]
+[2026-02-13 15:15:24,081: INFO: data_preprocessing: Train size: 8000 rows, Test size: 2000 rows]
+[2026-02-13 15:15:24,082: INFO: data_preprocessing: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:15:24,083: INFO: data_preprocessing: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:15:24,099: INFO: data_preprocessing: Scaled 15 numerical features on train/test sets.]
+[2026-02-13 15:15:24,099: INFO: data_preprocessing: 
+Saving preprocessed datasets]
+[2026-02-13 15:15:24,412: INFO: data_preprocessing: Saved X_train to artifacts\data_preprocessing]
+[2026-02-13 15:15:24,412: INFO: data_preprocessing: Saved X_test to artifacts\data_preprocessing]
+[2026-02-13 15:15:24,412: INFO: data_preprocessing: Saved y_train to artifacts\data_preprocessing]
+[2026-02-13 15:15:24,413: INFO: data_preprocessing: Saved y_test to artifacts\data_preprocessing]
+[2026-02-13 15:15:24,413: INFO: data_preprocessing: 
+Saving preprocessor objects]
+[2026-02-13 15:15:24,417: INFO: data_preprocessing: Encoder saved to artifacts\data_preprocessing\encoder.joblib]
+[2026-02-13 15:15:24,417: INFO: data_preprocessing: Scaler saved to artifacts\data_preprocessing\scaler.joblib]
+[2026-02-13 15:15:24,417: INFO: data_preprocessing: 
+========== DATA PREPROCESSING STAGE COMPLETED ==========]
+[2026-02-13 15:15:24,418: INFO: main: ----->stage Data Preprocessing Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:15:24,419: INFO: main: -----> stage Model Trainer Stage started <<<<<<]
+[2026-02-13 15:15:24,421: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:15:24,423: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:15:24,426: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:15:24,427: INFO: common: created directory at: artifacts]
+[2026-02-13 15:15:24,427: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-13 15:15:24,428: INFO: model_trainer: 
+========== STARTING MODEL TRAINER STAGE ==========]
+[2026-02-13 15:15:24,428: INFO: model_trainer: Loading preprocessed data for training]
+[2026-02-13 15:15:24,532: INFO: model_trainer: X_train shape: (8000, 15), X_test shape: (2000, 15)]
+[2026-02-13 15:15:24,534: INFO: model_trainer: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:15:24,535: INFO: model_trainer: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:15:24,535: INFO: model_trainer: Training Random Forest...]
+[2026-02-13 15:15:24,942: INFO: model_trainer: Random Forest training completed]
+[2026-02-13 15:15:24,942: INFO: model_trainer: Training XGBoost...]
+[2026-02-13 15:15:24,943: INFO: model_trainer: Computed scale_pos_weight = 0.1311]
+[2026-02-13 15:15:25,170: INFO: model_trainer: XGBoost training completed]
+[2026-02-13 15:15:25,296: INFO: model_trainer: RandomForest - Acc: 0.9815, Prec: 0.9954, Recall: 0.9836, F1: 0.9895, AUC: 0.9974254953970978]
+[2026-02-13 15:15:25,362: INFO: model_trainer: XGBoost - Acc: 0.9850, Prec: 0.9989, Recall: 0.9842, F1: 0.9915, AUC: 0.9992759205804338]
+[2026-02-13 15:15:25,362: INFO: model_trainer: Best model: XGBoost (F1 = 0.9915)]
+[2026-02-13 15:15:25,428: INFO: model_trainer: RandomForest saved to artifacts\model_trainer\rf_model.joblib]
+[2026-02-13 15:15:25,428: INFO: model_trainer: XGBoost saved to artifacts\model_trainer\xgb_model.joblib]
+[2026-02-13 15:15:25,428: INFO: model_trainer: Best model saved to artifacts\model_trainer\model.joblib]
+[2026-02-13 15:15:25,430: INFO: model_trainer: Metrics saved to artifacts\model_trainer\metrics.json]
+[2026-02-13 15:15:25,430: INFO: model_trainer: 
+========== MODEL TRAINER STAGE COMPLETED ==========]
+[2026-02-13 15:15:25,433: INFO: stage_04_model_trainer: Best model: XGBoost, F1: 0.9915]
+[2026-02-13 15:15:25,433: INFO: main: ----->stage Model Trainer Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:51:38,081: INFO: main: welcome to the custom logging]
+[2026-02-13 15:51:38,082: INFO: main: ----->> stage Data Ingestion Stage started <<-----]
+[2026-02-13 15:51:38,101: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:51:38,103: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:51:38,104: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:51:38,105: INFO: common: created directory at: artifacts]
+[2026-02-13 15:51:38,106: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-02-13 15:51:38,107: INFO: data_ingestion: 
+The path pf the main source is: C:\Users\Yashar\Slope-Stability-Prediction\data\slope_stability_dataset.csv]
+[2026-02-13 15:51:38,279: INFO: data_ingestion: 
+Data is successfully loaded to artifacts\data_ingestion\slope.csv]
+[2026-02-13 15:51:38,280: INFO: data_ingestion: 
+The shape of the initial dataset is: (10000, 9)]
+[2026-02-13 15:51:38,293: INFO: data_ingestion: The head of the dataset is as below:
+   Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio Reinforcement Type  Reinforcement Numeric  Factor of Safety (FS)
+0            18.745401       21.813837                    38.249958        41.907228         18.451042                   0.847237           Drainage                      3               2.613692
+1            24.507143       19.981044                    24.612800        32.964623          9.266800                   0.494517      Geosynthetics                      2               2.241626
+2            22.319939       12.926926                    28.665992        58.224926         10.686165                   0.195466     Retaining Wall                      0               1.568244
+3            20.986585       32.327000                    36.582016        20.948923         13.130201                   0.736642           Drainage                      3               3.000000
+4            16.560186       26.448087                    32.052234        39.392821         14.164400                   0.418678       Soil Nailing                      1               3.000000
+5            16.559945       43.956545                    38.464276        45.010501         15.901781                   0.594627      Geosynthetics                      2               3.000000
+6            15.580836        6.444931                    44.030198        51.278224         16.495701                   0.107265      Geosynthetics                      2               1.545751
+7            23.661761       33.974057                    22.913667        30.348552         25.507236                   0.631584     Retaining Wall                      0               3.000000
+8            21.011150       39.332700                    37.739193        44.346095         27.930794                   0.373550       Soil Nailing                      1               3.000000
+9            22.080726       39.176896                    25.758604        25.160074         18.899564                   0.334190       Soil Nailing                      1               3.000000]
+[2026-02-13 15:51:38,294: INFO: main: ----->> stage Data Ingestion Stage completed <<----- 
+
+]
+[2026-02-13 15:51:38,295: INFO: main: -----> stage Data Validation Stage started <<<<<<]
+[2026-02-13 15:51:38,300: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:51:38,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:51:38,304: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:51:38,305: INFO: common: created directory at: artifacts]
+[2026-02-13 15:51:38,306: INFO: common: created directory at: artifacts/data_validation]
+[2026-02-13 15:51:38,352: INFO: main: ----->stage Data Validation Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:51:38,352: INFO: main: -----> stage Data Preprocessing Stage started <<<<<<]
+[2026-02-13 15:51:38,352: INFO: stage_03_data_preprocessing: --- Starting Stage 03: Data Preprocessing ---]
+[2026-02-13 15:51:38,356: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:51:38,357: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:51:38,360: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:51:38,360: INFO: common: created directory at: artifacts]
+[2026-02-13 15:51:38,363: INFO: common: created directory at: artifacts/data_preprocessing]
+[2026-02-13 15:51:38,364: INFO: stage_03_data_preprocessing: 
+Configuration Loaded Successfully]
+[2026-02-13 15:51:38,364: INFO: data_preprocessing: 
+========== STARTING DATA PREPROCESSING STAGE ==========]
+[2026-02-13 15:51:38,366: INFO: data_preprocessing: 
+Check the Status File!]
+[2026-02-13 15:51:38,392: INFO: data_preprocessing: 
+Data is Successfully loaded and the initial shape is (10000, 9)]
+[2026-02-13 15:51:38,434: INFO: data_preprocessing: 
+EDA:
+Unit Weight (kN/m³)            0
+Cohesion (kPa)                 0
+Internal Friction Angle (°)    0
+Slope Angle (°)                0
+Slope Height (m)               0
+Pore Water Pressure Ratio      0
+Reinforcement Type             0
+Reinforcement Numeric          0
+Factor of Safety (FS)          0
+dtype: int64
+None
+       Unit Weight (kN/m³)  Cohesion (kPa)  Internal Friction Angle (°)  Slope Angle (°)  Slope Height (m)  Pore Water Pressure Ratio  Reinforcement Numeric  Factor of Safety (FS)
+count         10000.000000    10000.000000                 10000.000000     10000.000000      10000.000000               10000.000000           10000.000000           10000.000000
+mean             19.941596       27.703844                    32.501260        34.935669         27.358871                   0.503145               1.494300               2.545083
+std               2.876301       13.018255                     7.169344        14.449730         13.017788                   0.288341               1.120399               0.659996
+min              15.000116        5.007099                    20.001203        10.000277          5.000753                   0.000008               0.000000               0.500000
+25%              17.463289       16.427561                    26.343698        22.342862         15.992250                   0.256956               0.000000               2.125824
+50%              19.925286       27.765355                    32.551702        35.001512         27.217274                   0.506090               1.000000               3.000000
+75%              22.400063       39.041565                    38.616846        47.355813         38.771467                   0.753446               3.000000               3.000000
+max              24.997177       49.996617                    44.997524        59.989469         49.998747                   0.999940               3.000000               3.000000]
+[2026-02-13 15:51:38,435: INFO: data_preprocessing: 
+Adding New Features]
+[2026-02-13 15:51:38,438: INFO: data_preprocessing: 
+Adding beta_rad: 0       0.731419
+1       0.575341
+2       1.016217
+3       0.365628
+4       0.687534
+          ...   
+9995    0.832552
+9996    0.841709
+9997    0.409777
+9998    0.553548
+9999    0.599890
+Name: Slope Angle (°), Length: 10000, dtype: float64
+phi_rad: 0       0.667588
+1       0.429574
+2       0.500316
+3       0.638477
+4       0.559417
+          ...   
+9995    0.764574
+9996    0.675366
+9997    0.357555
+9998    0.524037
+9999    0.461377
+Name: Internal Friction Angle (°), Length: 10000, dtype: float64]
+[2026-02-13 15:51:38,441: INFO: data_preprocessing: New features added. Shape after feature engineering: (10000, 15)]
+[2026-02-13 15:51:38,441: INFO: data_preprocessing: 
+Creating binary target (Safety_Status)]
+[2026-02-13 15:51:38,443: INFO: data_preprocessing: Target distribution: Stable (1): 8841, Unstable (0): 1159]
+[2026-02-13 15:51:38,443: INFO: data_preprocessing: 
+Checking for missing values]
+[2026-02-13 15:51:38,447: INFO: data_preprocessing: No missing values found.]
+[2026-02-13 15:51:38,447: INFO: data_preprocessing: 
+Encoding categorical feature: Reinforcement Numeric]
+[2026-02-13 15:51:38,454: INFO: data_preprocessing: One‑hot encoding complete. Added columns: ['Reinforcement Numeric_1', 'Reinforcement Numeric_2', 'Reinforcement Numeric_3']]
+[2026-02-13 15:51:38,454: INFO: data_preprocessing: 
+Splitting data into train/test sets]
+[2026-02-13 15:51:38,673: INFO: data_preprocessing: 
+X data is completely saved at artifacts\data_preprocessing\X.csv]
+[2026-02-13 15:51:38,678: INFO: data_preprocessing: 
+y data is completely saved at artifacts\data_preprocessing\y.csv]
+[2026-02-13 15:51:38,679: INFO: data_preprocessing: 
+X shape is: (10000, 15)
+y shape is: (10000,)]
+[2026-02-13 15:51:38,686: INFO: data_preprocessing: Train size: 8000 rows, Test size: 2000 rows]
+[2026-02-13 15:51:38,688: INFO: data_preprocessing: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:51:38,689: INFO: data_preprocessing: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:51:38,704: INFO: data_preprocessing: Scaled 15 numerical features on train/test sets.]
+[2026-02-13 15:51:38,704: INFO: data_preprocessing: 
+Saving preprocessed datasets]
+[2026-02-13 15:51:38,961: INFO: data_preprocessing: Saved X_train to artifacts\data_preprocessing]
+[2026-02-13 15:51:38,962: INFO: data_preprocessing: Saved X_test to artifacts\data_preprocessing]
+[2026-02-13 15:51:38,962: INFO: data_preprocessing: Saved y_train to artifacts\data_preprocessing]
+[2026-02-13 15:51:38,962: INFO: data_preprocessing: Saved y_test to artifacts\data_preprocessing]
+[2026-02-13 15:51:38,963: INFO: data_preprocessing: 
+Saving preprocessor objects]
+[2026-02-13 15:51:38,967: INFO: data_preprocessing: Encoder saved to artifacts\data_preprocessing\encoder.joblib]
+[2026-02-13 15:51:38,967: INFO: data_preprocessing: Scaler saved to artifacts\data_preprocessing\scaler.joblib]
+[2026-02-13 15:51:38,968: INFO: data_preprocessing: 
+========== DATA PREPROCESSING STAGE COMPLETED ==========]
+[2026-02-13 15:51:38,969: INFO: main: ----->stage Data Preprocessing Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:51:38,969: INFO: main: -----> stage Model Trainer Stage started <<<<<<]
+[2026-02-13 15:51:38,973: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:51:38,976: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:51:38,977: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:51:38,978: INFO: common: created directory at: artifacts]
+[2026-02-13 15:51:38,979: INFO: common: created directory at: artifacts/model_trainer]
+[2026-02-13 15:51:38,980: INFO: model_trainer: 
+========== STARTING MODEL TRAINER STAGE ==========]
+[2026-02-13 15:51:38,980: INFO: model_trainer: Loading preprocessed data for training]
+[2026-02-13 15:51:39,080: INFO: model_trainer: X_train shape: (8000, 15), X_test shape: (2000, 15)]
+[2026-02-13 15:51:39,081: INFO: model_trainer: Train class distribution:
+Safety_Status
+1    7073
+0     927
+Name: count, dtype: int64]
+[2026-02-13 15:51:39,082: INFO: model_trainer: Test class distribution:
+Safety_Status
+1    1768
+0     232
+Name: count, dtype: int64]
+[2026-02-13 15:51:39,082: INFO: model_trainer: Training Random Forest...]
+[2026-02-13 15:51:39,422: INFO: model_trainer: Random Forest training completed]
+[2026-02-13 15:51:39,423: INFO: model_trainer: Training XGBoost...]
+[2026-02-13 15:51:39,423: INFO: model_trainer: Computed scale_pos_weight = 0.1311]
+[2026-02-13 15:51:39,651: INFO: model_trainer: XGBoost training completed]
+[2026-02-13 15:51:39,759: INFO: model_trainer: RandomForest - Acc: 0.9815, Prec: 0.9954, Recall: 0.9836, F1: 0.9895, AUC: 0.9974254953970978]
+[2026-02-13 15:51:39,781: INFO: model_trainer: XGBoost - Acc: 0.9850, Prec: 0.9989, Recall: 0.9842, F1: 0.9915, AUC: 0.9992759205804338]
+[2026-02-13 15:51:39,781: INFO: model_trainer: Best model: XGBoost (F1 = 0.9915)]
+[2026-02-13 15:51:39,883: INFO: model_trainer: RandomForest saved to artifacts\model_trainer\rf_model.joblib]
+[2026-02-13 15:51:39,883: INFO: model_trainer: XGBoost saved to artifacts\model_trainer\xgb_model.joblib]
+[2026-02-13 15:51:39,884: INFO: model_trainer: Best model saved to artifacts\model_trainer\model.joblib]
+[2026-02-13 15:51:39,885: INFO: model_trainer: Metrics saved to artifacts\model_trainer\metrics.json]
+[2026-02-13 15:51:39,885: INFO: model_trainer: 
+========== MODEL TRAINER STAGE COMPLETED ==========]
+[2026-02-13 15:51:39,887: INFO: stage_04_model_trainer: Best model: XGBoost, F1: 0.9915]
+[2026-02-13 15:51:39,888: INFO: main: ----->stage Model Trainer Stage completed <<<<<< 
+
+x============x]
+[2026-02-13 15:51:39,888: INFO: main: 
+-----> stage Prediction Stage started <<-----
+]
+[2026-02-13 15:51:39,893: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-13 15:51:39,895: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-13 15:51:39,897: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-02-13 15:51:39,898: INFO: common: created directory at: artifacts]
+[2026-02-13 15:51:39,898: INFO: common: created directory at: artifacts/prediction]
+[2026-02-13 15:51:39,899: INFO: prediction: 
+========== STARTING PREDICTION STAGE ==========]
+[2026-02-13 15:51:39,899: INFO: prediction: Loading model and scaler]
+[2026-02-13 15:51:39,936: INFO: prediction: Model and scaler loaded successfully]
+[2026-02-13 15:51:39,936: INFO: prediction: Loading features from artifacts\data_preprocessing\X.csv]
+[2026-02-13 15:51:40,007: INFO: prediction: Features shape: (10000, 15)]
+[2026-02-13 15:51:40,008: INFO: prediction: Loading true labels from artifacts\data_preprocessing\y.csv]
+[2026-02-13 15:51:40,029: INFO: prediction: Labels shape: 10000]
+[2026-02-13 15:51:40,029: INFO: prediction: Applying standard scaling]
+[2026-02-13 15:51:40,033: INFO: prediction: Generating predictions]
+[2026-02-13 15:51:40,283: INFO: prediction: Predictions saved to artifacts\prediction\predictions.csv]
+[2026-02-13 15:51:40,284: INFO: prediction: Output shape: (10000, 20)]
+[2026-02-13 15:51:40,284: INFO: prediction: 
+========== PREDICTION STAGE COMPLETED ==========]
+[2026-02-13 15:51:40,285: INFO: main: 
+-----> stage Prediction Stage completed <<-----
+
+x============x]

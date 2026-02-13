@@ -1,7 +1,7 @@
 from mlProject.constants import *
 from mlProject.utils.common import read_yaml, create_directories, save_json
 from mlProject.entity.config_entity import (DataIngestionConfig, DataValidationConfig,
-                                            DataPreprocessingConfig)
+                                            DataPreprocessingConfig,ModelTrainerConfig,PredictionConfig)
 from pathlib import Path
 
 class ConfigurationManager:
@@ -57,3 +57,42 @@ class ConfigurationManager:
         )
 
         return data_preprocessing_config
+    
+    def get_model_trainer_config(self) -> ModelTrainerConfig:
+        config = self.config.model_trainer
+        params = self.params
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir=config.root_dir,
+            train_data_path=Path(config.train_data_path),
+            test_data_path=Path(config.test_data_path),
+            train_target_path=Path(config.train_target_path),
+            test_target_path=Path(config.test_target_path),
+            model_path=Path(config.model_path),
+            rf_model_path=Path(config.rf_model_path),
+            xgb_model_path=Path(config.xgb_model_path),
+            metrics_path=Path(config.metrics_path),
+            random_state=params.random_state,
+            n_estimators=params.n_estimators,
+            max_depth=params.max_depth,
+            learning_rate=params.learning_rate,
+            subsample=params.subsample,
+            colsample_bytree=params.colsample_bytree,
+            class_weight=params.class_weight
+        )
+
+        return model_trainer_config
+    
+    def get_prediction_config(self) -> PredictionConfig:
+        config = self.config.prediction
+        create_directories([config.root_dir])
+        return PredictionConfig(
+            root_dir=config.root_dir,
+            X_path=Path(config.X_path),
+            y_path=Path(config.y_path) if config.y_path else None,
+            scaler_path=Path(config.scaler_path),
+            model_path=Path(config.model_path),
+            output_path=Path(config.output_path)
+        )

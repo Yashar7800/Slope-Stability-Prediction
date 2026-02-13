@@ -10,4 +10,5 @@ mlProject
 python-box
 matplotlib
 seaborn
+xgboost
 -e .
